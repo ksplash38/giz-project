@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" style="height:100%">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -31,12 +31,12 @@
 
           <link href="css/hover-effect/css/hover.css" rel="stylesheet">
   <link href="css/hover-effect/css/animate.css" rel="stylesheet">
-
+        	<link rel="stylesheet" type="text/css" href="css/quiz/quiz.css">
     <link href="aos/aos.css" rel="stylesheet">
 
 
     </head>
-<body >
+<body style="height:100%">
 		 <!-- start preloader -->
         <!-- <div id="loader-wrapper">
             <div class="logo"></div>
@@ -52,182 +52,148 @@
 
 
 
-<style media="screen">
-:root {
-/* --container-bg-color: #333; */
---left-bg-color: rgba(223, 39, 39, 0.7);
---left-button-hover-color: rgba(161, 11, 11, 0.3);
---right-bg-color: rgba(43, 43, 43, 0.8);
---right-button-hover-color: rgba(92, 92, 92, 0.3);
---hover-width-left: 51%;
-
---other-width-left: 49%;
-
-  --hover-width-right: 75%;
-
---other-width-right: 25%;
---speed: 1000ms;
-}
-
-html, body {
-padding:0;
-margin:0;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-width: 100%;
-height: 100%;
-
-}
-.here{
- overflow: scroll;
-position: absolute;
-left: 10%;
-
-}
-h1 {
-font-size: 4rem;
-color: #fff;
-position: absolute;
-left: 50%;
-top: 20%;
-transform: translateX(-50%);
-white-space: nowrap;
-}
-
-.button {
-display: block;
-position: absolute;
-left: 50%;
-top: 40%;
-height: 2.5rem;
-padding-top: 1.3rem;
-width: 15rem;
-text-align: center;
-color: #fff;
-border: #fff solid 0.2rem;
-font-size: 1rem;
-font-weight: bold;
-text-transform: uppercase;
-text-decoration: none;
-transform: translateX(-50%);
-}
-
-.split.left .button:hover {
-background-color: var(--left-button-hover-color);
-border-color: var(--left-button-hover-color);
-}
-
-.split.right .button:hover {
-background-color: var(--right-button-hover-color);
-border-color: var(--right-button-hover-color);
-}
-
-.container {
-/* position: relative; */
-width: 100%;
-height: 100%;
-/* background: var(--container-bg-color); */
-}
-
-.split {
-
-width: 50%;
-height: 100%;
-overflow: hidden;
-position: absolute;
-z-index: 1;
-top: 0;
-overflow-x: hidden;
-
-}
-
-.split.left {
-left:0;
-/*   background: url('https://image.ibb.co/m56Czw/designer.jpg') center center no-repeat; */
-background-size: cover;
 
 
-        overflow-wrap: break-word;
-word-wrap: break-word;
-  hyphens: auto;
-}
 
-/* .split.left:before {
-position:absolute;
-content: "";
-width: 100%;
-height: 100%;
-background: var(--left-bg-color);
-} */
-
-.split.right {
-right:0;
-background: url('https://image.ibb.co/m3ZbRb/programmer.png') center center no-repeat;
-background-size: cover;
-}
-
-.split.right:before {
-position:absolute;
-content: "";
-width: 100%;
-height: 100%;
-background: var(--right-bg-color);
-}
-
-.split.left, .split.right, .split.right:before, .split.left:before {
-transition: var(--speed) all ease-in-out;
-}
-
-.hover-left .left {
-width: var(--hover-width-left);
-}
-
-.hover-left .right {
-width: var(--other-width-left);
-}
-
-.hover-left .right:before {
-z-index: 2;
-}
+<!-- Start Header Section -->
+<header class="main_menu_sec navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-12">
+				<div class="lft_hd">
+					<a href="index.html" style="color:#FFA500"><img src=" " alt=""/>SCIT</a>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-9 col-sm-12">
+				<div class="rgt_hd">
+					<div class="main_menu">
+						<nav id="nav_menu">
+							<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>
+						<div id="navbar">
+							<ul>
+								<li><a class="page-scroll" href="index.html">HOME</a></li>
 
 
-.hover-right .right {
-width: var(--hover-width-right);
-}
 
-.hover-right .left {
-width: var(--other-width-right);
-}
+                <li><a href="#">INFORMATION <i class="fa fa-angle-down"></i></a>
+                <ul>
+                  <li><a class="page-scroll" href="institution">INSTITUTION</a>
+                    <!-- <ul>
+                      <li><a class="page-scroll" href="#tm_sec">WITHIN AFRICA</a>
+                        <ul>
+                          <li><a class="page-scroll" href="#tm_sec">UNDER GRADUATE</a></li>
+                          <li><a class="page-scroll" href="#tstm_sec">POST-GRADUATE</a></li>
+                            <li><a class="page-scroll" href="#tstm_sec">OTHERS</a></li>
 
-.hover-right .left:before {
-z-index: 2;
-}
+                        </ul>
 
-@media(max-width: 800px) {
-h1 {
-  font-size: 2rem;
-}
+                      </li>
+                      <li><a class="page-scroll" href="#tstm_sec">OUTSIDE AFRICA</a>
+                        <ul>
+                          <li><a class="page-scroll" href="#tm_sec">UNDER GRADUATE</a></li>
+                          <li><a class="page-scroll" href="#tstm_sec">POST-GRADUATE</a></li>
+                            <li><a class="page-scroll" href="#tstm_sec">OTHERS</a></li>
 
-.button {
-  width: 12rem;
-}
-}
+                        </ul>
+                      </li>
 
-@media(max-height: 700px) {
-.button {
-  top: 70%;
-}
-}
+                    </ul> -->
+
+                  </li>
 
 
-.begining{
 
-  padding:0;
-  margin:0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  width: 100%;
-  height: 100%;
-}
-</style>
+                  <!-- <li><a class="page-scroll" href="#tstm_sec">DISCIPLINES</a> -->
+                    <!-- <ul>
+                      <li><a class="page-scroll" href="#tm_sec">UNIVERSITIES</a>
+                        <ul>
+                          <li><a class="page-scroll" href="#tm_sec">COST</a></li>
+                          <li><a class="page-scroll" href="#tstm_sec">DURATION</a></li>
+                            <li><a class="page-scroll" href="#tstm_sec">ADMISSION REQUIREMENT</a></li>
+                            <li><a class="page-scroll" href="#tm_sec">DEGREE AWARD</a></li>
+                            <li><a class="page-scroll" href="#tstm_sec">ACCREDIATION STATUS</a></li>
+                              <li><a class="page-scroll" href="#tstm_sec">LOCATION</a></li>
+
+                        </ul>
+
+
+                      </li>
+                      <li><a class="page-scroll" href="#tstm_sec">POLYTECHNICS</a></li>
+                        <li><a class="page-scroll" href="#tstm_sec">OTHERS</a></li>
+
+                    </ul> -->
+                  </li>
+                  <li><a class="page-scroll" href="#lts_sec">TRAINING & EVENTS</a></li>
+                  <li><a class="page-scroll" href="#pricing_sec">ACCREDITAION STATUS</a>
+
+
+
+                  </li>
+                  <li><a class="page-scroll" href="#clt_sec">TRAINING & EVENTS</a></li>
+                </ul>
+                </li>
+
+                <li><a href="#">ENQUIRIES <i class="fa fa-angle-down"></i></a>
+                <ul>
+                	<li><a class="page-scroll" href="#skill_sec">FAQ</a></li>
+                  <li><a class="page-scroll" href="#protfolio_sec">ABOUT US</a></li>
+  								<li><a class="page-scroll" href="contactus.html">CONTACT US</a></li>
+                </ul>
+                </li>
+
+
+								<li><a class="page-scroll" href="#abt_sec">TAKE TESTS  <i class="fa fa-angle-down"></i></a>
+<ul>
+  <li>
+    <a class="page-scroll" href="#">Class Test (beginning of SS1/SS2 or Grade 10/11)</a>
+  </li>
+  <li>
+    <a class="page-scroll" href="#">Professional Test (from SS2/Grade 11 & above</a>
+  </li>
+</ul>
+
+
+
+                </li>
+
+								<li><a class="page-scroll" href="#pr_sec">INTERNING RATE</a></li>
+
+
+
+
+                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i><i class="fa fa-angle-down"></i></a>
+                <ul>
+                  <li><a class="page-scroll" href="register/loginRegistrationForm/index.html#tologin">LOGIN</a></li>
+                      <!-- <li><a class="page-scroll" href="blog.html">LOGIN</a></li> -->
+                    <!-- <li><a class="page-scroll" href="single.html">REGISTER</a></li> -->
+                  <li><a class="page-scroll" href="register/loginRegistrationForm/index.html#toregister">REGISTER</a></li>
+                  <li><a class="page-scroll" href="post.htmll">ADMINISTRATOR</a></li>
+
+<!-- IF THE USER IS ALREADY LOGGED IN -->
+
+  <li><a class="page-scroll" href="single.html">LOGOUT</a></li>
+<!-- IF THE USER IS ALREADY LOGGED IN -->
+
+                </ul>
+                </li>
+
+
+							</ul>
+						</div>
+						</nav>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- End Header Section -->
+
 
 <div class="begining">
 
@@ -260,10 +226,20 @@ h1 {
  <p class="question">2. How many type of database?</p>
 
  <ul class="answers">
- <input type="radio" name="q2" value="a" id="q2a"><label for="q2a">1</label><br/>
+      <li>
+ <input type="radio" name="q2" value="a" id="q2a"><label for="q2a">1</label>
+           </li>
+           <li>
  <input type="radio" name="q2" value="b" id="q2b"><label for="q2b">2</label><br/>
- <input type="radio" name="q2" value="c" id="q2c"><label for="q2c">3</label><br/>
- <input type="radio" name="q2" value="d" id="q2d"><label for="q2d">4</label><br/>
+                </li>
+                <li>
+     <input type="radio" name="q2" value="c" id="q2c"><label for="q2c">3</label><br/>
+                     </li>
+                     <li>
+       <input type="radio" name="q2" value="d" id="q2d"><label for="q2d">4</label><br/>
+                          </li>
+
+
  </ul>
 
  <p class="question">3. Which one is not the type of database?</p>
@@ -292,17 +268,59 @@ h1 {
  <input type="radio" name="q5" value="c" id="q5c"><label for="q5c">a computer software application that interacts with the user, other applications, and the database itself to capture and analyze data</label><br/>
  <input type="radio" name="q5" value="d" id="q5d"><label for="q5d">none of above</label><br/>
  </ul>
-    </div>
 
- <br/>
- <div id="results">
+
+ <div id="results"  >
  Show me the answers!
  </div>
  <br/>
+
+ <br/>
+ <br/>
+
+ <br/>
+    </div>
+
+ <br/>
+
+ <br/>
   </div>
   <div class="split right">
-    <h1>The Programmer</h1>
-    <a href="#" class="button">Read More</a>
+    <div class="here">
+
+       <div id="categorylist">
+       </div>
+        <br/>
+       <div id="category1">
+       <p>
+       <strong>Question 1:</strong> The correct answer is <strong>an organized collection of data</strong>.</p>
+       </div>
+
+       <div id="category2">
+       <p>
+       <strong>Question 2:</strong> The correct answer is <strong>3</strong>.</p>
+       </div>
+
+       <div id="category3">
+       <p>
+       <strong>Question 3:</strong> The correct answer is <strong>Database Model</strong>.</p>
+       </div>
+
+       <div id="category4">
+       <p>
+       <strong>Question 4:</strong> The correct answer is <strong>All of above</strong>.</p>
+       </div>
+
+       <div id="category5">
+       <p>
+       <strong>Question 5:</strong> The correct answer is <strong>a computer software application that interacts with the user, other applications, and the database itself to capture and analyze data</strong>.</p>
+       </div>
+
+       <div id="category6">
+       <p>
+       You answered them all right!</p>
+       </div>
+    </div>
   </div>
 </div>
 </div></div>
