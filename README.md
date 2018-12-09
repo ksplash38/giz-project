@@ -1,1 +1,1 @@
-# giz-studen-career-project
+# giz-student-career-path-project
