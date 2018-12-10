@@ -22,40 +22,45 @@
 .jumbotron p {
     color: white;
   }
-  .answers li { 
-list-style: upper-alpha; 
-} 
-
-label { 
-margin-left: 0.5em; 
-cursor: pointer; 
-} 
-
-#results { 
-background: #dddada; 
-color: 000000; 
-padding: 3px; 
-text-align: center; 
-width: 200px; 
-cursor: pointer; 
-border: 1px solid gray; 
+  .answers li {
+list-style: upper-alpha;
+ /* word-break: break-all; */
+overflow-wrap: break-word;
+word-wrap: break-word;
+  hyphens: auto;
+	padding-right: 10em;
 }
 
-#results:hover { 
-background: #3d91b8; 
-color: #ffffff; 
-padding: 3px; 
-text-align: center; 
-width: 200px; 
-cursor: pointer; 
-border: 1px solid gray; 
-} 
+label {
+margin-left: 0.5em;
+cursor: pointer;
+}
 
-#categorylist { 
-margin-top: 6px; 
-display: none; 
-} 
+#results {
+background: #dddada;
+color: 000000;
+padding: 3px;
+text-align: center;
+width: 200px;
+cursor: pointer;
+border: 1px solid gray;
+}
 
-#category1, #category2, #category3, #category4, #category5, #category6{ 
-display: none; 
+#results:hover {
+background: #3d91b8;
+color: #ffffff;
+padding: 3px;
+text-align: center;
+width: 200px;
+cursor: pointer;
+border: 1px solid gray;
+}
+
+#categorylist {
+margin-top: 6px;
+display: none;
+}
+
+#category1, #category2, #category3, #category4, #category5, #category6{
+display: none;
 }
