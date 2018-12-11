@@ -598,7 +598,7 @@ INSERT FILTER FIELDS HERE <span class="operator">=</span> HERE TOO </a><a class=
 <div class="container-fluid">
 	<div class="row">
 
-		<div class="col-lg-3 col-md-3  col-xs-3">
+		<div class="col-lg-3 col-md-3  col-xs-3 col-sm-3">
       <div class="footer">
     <ul>
       <li><a href="#">Scholarships</a></li>
@@ -609,16 +609,16 @@ INSERT FILTER FIELDS HERE <span class="operator">=</span> HERE TOO </a><a class=
     </ul>
         		</div>
       </div>
-      <div class="col-lg-3  col-md-3  col-xs-3">
+      <div class="col-lg-3  col-md-3  col-xs-3 col-sm-3">
         <div class="footer">
-      <ul>
+         <ul>
         <li><a href="#">Scholarships</a></li>
         <li><a href="#">Disciplines</a></li>
         <li><a href="#">Trainings</a></li>
         <li><a href="#">Accreditation Status</a></li>
             <li><a href="#">Training & Events</a></li>
-      </ul>
-          		</div>
+          </ul>
+        	</div>
         </div>
 
         <div class="col-lg-3  col-md-3  col-xs-3">
@@ -633,7 +633,7 @@ INSERT FILTER FIELDS HERE <span class="operator">=</span> HERE TOO </a><a class=
             		</div>
           </div>
 
-          <div class="col-lg-3  col-md-3  col-xs-3">
+          <div class="col-lg-3  col-md-3  col-xs-3 col-sm-3">
             <div class="ft">
               <ul>
                 <li><a href=""><i class="fa fa-facebook"></i></a></li>
@@ -686,23 +686,23 @@ $(document).ready(function(){
 
 
 
-
-  $(".filter-dropdown, .text-button").click(function(){
-    $(".edit-filter-modal").toggleClass("hidden");
-
-  });
-    $(".apply-button").click(function(){
-    $(".edit-filter-modal").toggleClass("hidden");
-          $(".filter, .filter-remove, .fa-plus, .fa-filter").toggleClass("filter-hidden");
-      $(".filter-dropdown-text").text("Add filter");
-
-
-    });
-
-      $(".filter-remove").click(function(){
-        $(".filter, .filter-remove, .fa-plus, .fa-filter").toggleClass("filter-hidden");
-        $(".filter-dropdown-text").text("Filter dataset");
-      });
+  // 
+  // $(".filter-dropdown, .text-button").click(function(){
+  //   $(".edit-filter-modal").toggleClass("hidden");
+  //
+  // });
+  //   $(".apply-button").click(function(){
+  //   $(".edit-filter-modal").toggleClass("hidden");
+  //         $(".filter, .filter-remove, .fa-plus, .fa-filter").toggleClass("filter-hidden");
+  //     $(".filter-dropdown-text").text("Add filter");
+  //
+  //
+  //   });
+  //
+  //     $(".filter-remove").click(function(){
+  //       $(".filter, .filter-remove, .fa-plus, .fa-filter").toggleClass("filter-hidden");
+  //       $(".filter-dropdown-text").text("Filter dataset");
+  //     });
 
 
    $('.show_hide').showHide({
