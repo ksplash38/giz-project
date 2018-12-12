@@ -658,6 +658,7 @@ INSERT FILTER FIELDS HERE <span class="operator">=</span> HERE TOO </a><a class=
 </div>
 </footer>
 
+
 <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
 
@@ -673,36 +674,34 @@ INSERT FILTER FIELDS HERE <span class="operator">=</span> HERE TOO </a><a class=
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/scrolling-nav.js"></script>
 <script src="js/plugins.js"></script>
-
-
-
+<script src="aos/aos.js"></script>
 <script src="js/main.js"></script>
 
 <script src="showHide.js" type="text/javascript"></script>
 <script src="js/custom.js"></script>
+
+
+
 <script type="text/javascript">
 
 $(document).ready(function(){
 
+  $(".filter-dropdown, .text-button").click(function(){
+    $(".edit-filter-modal").toggleClass("hidden");
+
+  });
+    $(".apply-button").click(function(){
+    $(".edit-filter-modal").toggleClass("hidden");
+          $(".filter, .filter-remove, .fa-plus, .fa-filter").toggleClass("filter-hidden");
+      $(".filter-dropdown-text").text("Add filter");
 
 
-  // 
-  // $(".filter-dropdown, .text-button").click(function(){
-  //   $(".edit-filter-modal").toggleClass("hidden");
-  //
-  // });
-  //   $(".apply-button").click(function(){
-  //   $(".edit-filter-modal").toggleClass("hidden");
-  //         $(".filter, .filter-remove, .fa-plus, .fa-filter").toggleClass("filter-hidden");
-  //     $(".filter-dropdown-text").text("Add filter");
-  //
-  //
-  //   });
-  //
-  //     $(".filter-remove").click(function(){
-  //       $(".filter, .filter-remove, .fa-plus, .fa-filter").toggleClass("filter-hidden");
-  //       $(".filter-dropdown-text").text("Filter dataset");
-  //     });
+    });
+
+      $(".filter-remove").click(function(){
+        $(".filter, .filter-remove, .fa-plus, .fa-filter").toggleClass("filter-hidden");
+        $(".filter-dropdown-text").text("Filter dataset");
+      });
 
 
    $('.show_hide').showHide({
