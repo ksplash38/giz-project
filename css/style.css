@@ -813,17 +813,8 @@ color : #00AFF0;transition: all 1s ease 0s;
 .ft ul li .fa-facebook {
 padding : 3px;
 }
-#ltd_footer_sec {
-background : none 0 0 repeat scroll #363636;
-padding: 2em 2em 2em 2em;
 
-}
-.footer > ul li a {
-color : #fff;
-/* font-size : 20px; */
-/* font-weight : normal;
-text-transform : uppercase; */
-}
+
 #ft_sec {
 padding : 70px 0;
 }
