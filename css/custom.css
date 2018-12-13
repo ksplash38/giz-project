@@ -176,14 +176,25 @@ input{
  border: 1px solid rgba(0,0,0,0.125);
 }
 
-button{
+ .apply-button{
  background-color: rgb(61, 157, 179);
- color: white;
+ color: white !important;
  padding: 8px 16px;
  border:none;
  border-radius: 3px;
  float: right;
 }
+
+
+button{
+ 
+
+padding: 8px 16px;
+border:none;
+border-radius: 3px;
+float: right;
+}
+
 
 button:hover{
  opacity: 0.8;
@@ -297,8 +308,6 @@ line-height: 1.5em;
 
 
 }
-
-
 
 
 
@@ -714,6 +723,8 @@ h1 {
 	flex: 0 0 auto;
     -webkit-flex: 0 0 auto;
 }
+
+
 
 
 
