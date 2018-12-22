@@ -169,11 +169,15 @@ background : #0085A1;
 .navbar-default .navbar-brand{
 	color:	#FFA500
 }
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+.navbar-default .navbar-nav>li>a:hover{
 
-color:	#FFA500
+color:	#FFA500 !important
 }
 
+
+.navbar-default .navbar-nav>li>a:focus{
+	color:#ffff
+}
 
 .navbar-default .navbar-nav>li>a{
 	color : #ffffff;
@@ -237,6 +241,21 @@ color:	#FFA500
 
 	transition : all 0.4s 0s ease;
 	background : #0085A1;
+}
+
+
+.nav-tabs>li>a:hover{
+	transition: all 0.4s 0s ease;
+	    background: #0085A1;
+			color: #fff;
+
+}
+
+.btn-default:hover {
+    color: #ffff;
+    background-color: #0085A1;
+    border-color: #adadad;
+			transition: all 0.4s 0s ease;
 }
 
 

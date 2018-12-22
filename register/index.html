@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>SCIT-login & Register</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+                <link rel="stylesheet" href="../css/custom.css">
+    </head>
+    <body>
+
+
+
+
+            <section class="margins">
+              <div class="container">
+                        <div class="row">
+                                <div class="col-md-8 col-xs-12 col-sm-12  col-md-offset-2 col-lg-offset-3 col-lg-6">
+                <div id="container_demo" >
+
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form  action="#" autocomplete="on">
+                                <h1>Log in</h1>
+                                <p class="chage_link">
+                  Not a member yet ?
+                  <a href="#toregister" class="to_register">Join us</a>
+                </p>
+                                <p>
+                                    <label for="username" class="uname" data-icon="u" > Your email or username </label>
+                                    <input id="username" name="username" required="required" type="text" placeholder=""/>
+                                </p>
+                                <p>
+                                    <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="" />
+                                </p>
+                                <p class="keeplogin">
+									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+									<label for="loginkeeping">Keep me logged in</label>
+								</p>
+                                <p class="login button">
+                                    <input type="submit" value="Login" />
+								</p>
+
+                            </form>
+                        </div>
+
+                        <div id="register" class="animate form">
+                            <form  action="#" autocomplete="on">
+                                <h1> Sign up </h1>
+                                <p class="change_ink">
+                  Already a member ?
+                  <a href="#tologin" class="to_register"> Sign In </a>
+                </p>
+                                <p>
+                                    <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="" />
+                                </p>
+                                <p>
+                                    <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder=""/>
+                                </p>
+                                <p>
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder=""/>
+                                </p>
+                                <p>
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder=""/>
+                                </p>
+
+
+
+                                <p>
+<div class="row">
+  <div class="form-group">
+ <div class="col-xs-4">
+
+  <div class="button dropdown">
+    <select id="colorselector">
+       <option value="student">STUDENT</option>
+       <option value="secondary">EDUCATION PARTNER(Secondary)</option>
+       <option value="tetiary">EDUCATION PARTNER(Tetiary)</option>
+       <option value="internship">INTERNSHIP PROVIDER</option>
+    </select>
+  </div>
+  </div>
+    <div class="col-xs-8">
+  <div class="output">
+    <div id="student" class="desc">
+        <div class="col-xs-6">
+           <input id="schoolname" name="secondary" required="required" type="text" placeholder="School ID"/> </div>
+
+           <div class="col-xs-6">
+              <input id="schoolname" name="secondary" required="required" type="text" placeholder="Current Class"/> </div>
+            </div>
+    <div id="secondary" class="desc"> <input id="schoolname" name="secondary" required="required" type="text" placeholder="Enter name of School"/> </div>
+    <div id="tetiary" class="desc">  <input id="schoolname" name="tetiary" required="required" type="text" placeholder="Enter name of School"/>  </div>
+    <div id="internship" class="desc">  <input id="schoolname" name="internship" required="required" type="text" placeholder="Enter name of Business"/>  </div>
+  </div>
+
+  </div>
+   <!-- <div class="form-group">
+  <div class="col-xs-4">
+            <label for="level" class="youpasswd">Choose Level</label>
+    <select class="form-control" name="" >
+            <option value="">Student</option>
+           <option value="">Education Partner(Secondary)</option>
+            <option value="">Education Partner(Tetiary)</option>
+          <option value="">Internship Provider</option>
+    </select>
+  </div>
+
+  <div class="col-xs-8">
+    <p>
+        <label for="schoolname" class="youpasswd" >Enter School Name (if not staff)</label>
+
+        <input id="schoolname" name="passwordsignup_confirm" required="required" type="text" placeholder=""/>
+    </p>
+  </div>
+</div> -->
+
+</div>
+
+                                </p>
+
+                                <p class="signin button">
+									<input type="submit" value="Sign up"/>
+								</p>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+        </div>
+              </div>
+                    </div>
+    </section>
+
+
+<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+        <script src="../js/vendor/jquery-1.11.2.min.js"></script>
+
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/showHide.js"></script>
+<script src="../js/jquery.nicescroll.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+
+
+<script type="text/javascript">
+
+
+$(function(){
+  $('#colorselector').change(function(){
+$('.desc').hide();
+$('#' + $(this).val()).show();
+});
+});
+
+
+</script>
+    </body>
+</html>
