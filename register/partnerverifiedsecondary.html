@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>SCIT-login & Register</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+                <link rel="stylesheet" href="../css/custom.css">
+    </head>
+    <body>
+
+
+
+
+      <section class="margins">
+        <div class="container">
+          <div class="row ">
+
+
+      <div class="col-sm-7 col-sm-offset-3">
+        <div class="text-center">
+          <h2>YOUR ACCOUNT IS GOOD 2 GO!</h2>
+<div class="emailverified">
+     <p>YOUR SCHOOL ID IS</p>
+     <p> <b>BING21342334</b> </p>
+
+
+
+
+
+
+</div>
+
+        </div>
+
+
+
+
+
+      </div>
+
+
+            </div>
+
+            <div class="row">
+  <div class="col-lg-offset-1 col-xs-10">
+
+  <!-- MultiStep Form -->
+
+          <form id="msform">
+              <!-- progressbar -->
+              <ul id="progressbar">
+                  <li class="active">Personal Biography</li>
+                  <li>Full School Profile</li>
+                  <li>Verification of Students</li>
+              </ul>
+              <!-- fieldsets -->
+              <fieldset>
+                  <h2 class="fs-title">Personal biography/profile of Guidance and Counselor  </h2>
+                  <h3 class="fs-subtitle">Tell us something more about you</h3>
+                  <input type="text" name="#" placeholder="Full Name"/>
+                  <input type="text" name="#"  maxlength="100" placeholder="Summary"/>
+                  <!-- <input type="text" name="phone" placeholder="Phone"/> -->
+                  <textarea name="#" rows="8" cols="80" placeholder="full description"></textarea>
+                  <input type="button" name="next" class="next action-button" value="Next"/>
+              </fieldset>
+              <fieldset>
+                  <h2 class="fs-title">School Profile</h2>
+                  <!-- <h3 class="fs-subtitle">Your presence on the social network</h3> -->
+                  <textarea name="#" rows="8" cols="80" placeholder="full profile"></textarea>
+                  <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                  <input type="button" name="next" class="next action-button" value="Next"/>
+              </fieldset>
+              <fieldset>
+                <h2 class="fs-title">Verify Students</h2>
+                <!-- <h3 class="fs-subtitle">Your presence on the social network</h3> -->
+                <ul class="nav nav-tabs">
+           <li class="active"><a data-toggle="tab" href="#verifystudents">VERIFY STUDENTS</a></li>
+           <li><a data-toggle="tab" href="#bulk">BULK UPLOAD</a></li>
+
+         </ul>
+
+         <div class="tab-content">
+           <div id="verifystudents" class="tab-pane fade in active">
+             <h3>Verify Students</h3>
+
+     <div class="ex3">
+
+<div class="row">
+  <div class="col-xs-7 col-sm-7">
+First & Last Name
+  </div>
+    <div class="row">
+  <div class="col-xs-5 col-sm-5 ">
+
+      <div class="col-xs-12 col-sm-6">
+        <button class="btn btn-success">Accept</button>
+  </div>
+          <div class="col-xs-12 col-sm-6">
+              <button class="btn btn-danger">Decline</button>
+              </div>        </div>
+
+  </div>
+
+
+</div>
+
+  <hr />
+
+
+  <div class="row">
+    <div class="col-xs-7 col-sm-7">
+  First & Last Name
+    </div>
+      <div class="row">
+    <div class="col-xs-5 col-sm-5 ">
+
+        <div class="col-xs-12 col-sm-6">
+          <button class="btn btn-success">Accept</button>
+    </div>
+            <div class="col-xs-12 col-sm-6">
+                <button class="btn btn-danger">Decline</button>
+                </div>        </div>
+
+    </div>
+
+
+  </div>
+    <hr />
+     </div>
+           </div>
+           <div id="bulk" class="tab-pane fade">
+             <h3>Bulk Upload</h3>
+             <label for="file">Choose a file (Excel file only) :</label>
+           <input type="file" id="file">
+           </div>
+
+         </div>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+
+                  <input type="submit" name="submit" class="submit action-button" value="Skip or Finish"/>
+              </fieldset>
+          </form>
+
+  <!-- /.MultiStep Form -->
+            </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- End footer Section -->
+
+      <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+              <script src="../js/vendor/jquery-1.11.2.min.js"></script>
+
+      <script src="../js/isotope.pkgd.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+
+      <script src="../js/owl.carousel.min.js"></script>
+      <script src="../js/showHide.js"></script>
+      <script src="../js/jquery.nicescroll.min.js"></script>
+      <script src="../js/jquery.easing.min.js"></script>
+
+
+
+
+        <script src="../js/sweetalert.min.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function( $ ) {
+
+      //jQuery time
+      var current_fs, next_fs, previous_fs; //fieldsets
+      var left, opacity, scale; //fieldset properties which we will animate
+      var animating; //flag to prevent quick multi-click glitches
+
+      $(".next").click(function(){
+          if(animating) return false;
+          animating = true;
+
+          current_fs = $(this).parent();
+          next_fs = $(this).parent().next();
+
+          //activate next step on progressbar using the index of next_fs
+          $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+          //show the next fieldset
+          next_fs.show();
+          //hide the current fieldset with style
+          current_fs.animate({opacity: 0}, {
+              step: function(now, mx) {
+                  //as the opacity of current_fs reduces to 0 - stored in "now"
+                  //1. scale current_fs down to 80%
+                  scale = 1 - (1 - now) * 0.2;
+                  //2. bring next_fs from the right(50%)
+                  left = (now * 50)+"%";
+                  //3. increase opacity of next_fs to 1 as it moves in
+                  opacity = 1 - now;
+                  current_fs.css({
+              'transform': 'scale('+scale+')',
+              'position': 'absolute'
+            });
+                  next_fs.css({'left': left, 'opacity': opacity});
+              },
+              duration: 800,
+              complete: function(){
+                  current_fs.hide();
+                  animating = false;
+              },
+              //this comes from the custom easing plugin
+              easing: 'easeInOutBack'
+          });
+      });
+
+      $(".previous").click(function(){
+          if(animating) return false;
+          animating = true;
+
+          current_fs = $(this).parent();
+          previous_fs = $(this).parent().prev();
+
+          //de-activate current step on progressbar
+          $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+          //show the previous fieldset
+          previous_fs.show();
+          //hide the current fieldset with style
+          current_fs.animate({opacity: 0}, {
+              step: function(now, mx) {
+                  //as the opacity of current_fs reduces to 0 - stored in "now"
+                  //1. scale previous_fs from 80% to 100%
+                  scale = 0.8 + (1 - now) * 0.2;
+                  //2. take current_fs to the right(50%) - from 0%
+                  left = ((1-now) * 50)+"%";
+                  //3. increase opacity of previous_fs to 1 as it moves in
+                  opacity = 1 - now;
+                  current_fs.css({'left': left});
+                  previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+              },
+              duration: 800,
+              complete: function(){
+                  current_fs.hide();
+                  animating = false;
+              },
+              //this comes from the custom easing plugin
+              easing: 'easeInOutBack'
+          });
+      });
+
+      $(".submit").click(function(){
+          return false;
+      })
+});
+
+
+swal({
+  title: "Good job!",
+  text: "Youe email have been verified successfully",
+  icon: "success",
+  button: "CONTINUE",
+
+});
+// TO REDIRECT THE USER AFTER OK HAS BEEN CLICKED
+// .then(function() {
+//
+// window.location.href = "new_url.html";
+//
+// });
+</script>
+    </body>
+</html>
