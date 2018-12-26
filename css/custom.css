@@ -88,9 +88,9 @@ padding: 7em 0em 2em 0em;
 
 
 .filter-bar{
- height: 50px;
+ height: 30px;
  border-bottom: 1px solid #454545;
- padding: 16px;
+ /* padding: 1px; */
 
 }
 
@@ -107,7 +107,7 @@ i{
 }
 
 .filter-dropdown:hover{
- color: #FFA500;
+ color: #FFA500 !important;
 }
 
 .filter{
@@ -579,6 +579,11 @@ right: 45px;
 font-size: 60px;
 }
 
+/* split screen take test end */
+
+.table a:focus, a:hover{
+  color:#fff !important;
+}
 
 
 #myFooter {
